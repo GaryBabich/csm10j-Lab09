@@ -1,0 +1,23 @@
+package interfaces;
+
+public abstract class CarB implements Drivable{
+             
+        private boolean start = false;
+        @Override
+        public void Drive(){
+            if (start == true){
+                System.out.println("Driving vehicle");
+            }else{
+                System.out.println("Starting the vehicle first");
+            }
+        }
+        @Override       
+        public void Start(){
+            System.out.println("Starting vehicle");
+            start = true;
+        }
+        
+    
+    
+    
+}
