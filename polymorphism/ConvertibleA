@@ -1,0 +1,26 @@
+package polymorphism;
+
+public class ConvertibleA extends CarA{
+
+            
+        public boolean cover = false;
+        
+        public void PutTopUp(){
+            if (cover == false){
+            System.out.println("Putting top up");
+            } else if (cover == true){
+            System.out.println("Top is already up");
+            }
+        }
+            
+        
+        public void PutTopDown(){
+            if (cover == true){
+            System.out.println("Putting top down");
+            } else if (cover == false) {
+            System.out.println("Top is already down");
+            }
+        }
+
+    
+}
