@@ -1,0 +1,21 @@
+package polymorphism;
+
+public abstract class Vehicle {
+
+        
+        private boolean start = false;
+        
+        public void Drive(){
+            if (start == true){
+                System.out.println("Driving vehicle");
+            }else{
+                System.out.println("Starting the vehicle first");
+            }
+        }
+                
+        public void Start(){
+            System.out.println("Starting vehicle");
+            start = true;
+        }
+        
+    }
